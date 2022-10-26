@@ -7,16 +7,21 @@
   padding: 10px;
   width: auto;
   margin: 16px;
+  margin-bottom: 0px;
   float: left;
+  display: flex;
+  flex-direction: column;
   /* box-sizing: border-box; */
+  position: relative;
+  bottom: 11.4rem;
+  width: 1255px;
+  left: 7.9rem;
 }
 .note h1 {
   font-size: 1.1em;
-  margin-bottom: 6px;
+  margin: 0px;
 }
 .note p {
   font-size: 1.1em;
-  margin-bottom: 10px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  margin: 0px;
 }

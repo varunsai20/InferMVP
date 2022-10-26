@@ -1,13 +1,13 @@
 import React from "react";
-
+import "../src/Styles.css";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // PAGES
 import Home from "./pages/Home/Home";
-import Profile from "./pages/Profile";
+import Profile from "./pages/Profile/Profile";
 import Saved from "./pages/Saved/Saved";
-import Settings from "./pages/Settings";
+import Settings from "./pages/Settings/Settings";
 
 export default function App() {
   return (
