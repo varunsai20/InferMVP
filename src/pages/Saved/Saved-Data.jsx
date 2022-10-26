@@ -1,6 +1,7 @@
 import React from "react";
 import SavedContent from "./SavedContent";
 import notes from "./notes";
+import "./Saved-Content.css";
 
 export default function SavedData() {
   return (
