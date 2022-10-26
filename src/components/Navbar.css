@@ -12,6 +12,7 @@ body {
 
 .home,
 .profile,
+.saved,
 .settings {
   display: flex;
   height: 90vh;
