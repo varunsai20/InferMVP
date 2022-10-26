@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
-import "./Saved-Nav.css";
-function SavedNav() {
+import "./Settings-Nav.css";
+function SettingsNav() {
   return (
     <Navbar bg="light" expand="lg">
-      <p id="Articles">Saved Articles & Research Papers</p>
+      <p id="Settings">Settings</p>
     </Navbar>
   );
 }
 
-export default SavedNav;
+export default SettingsNav;
