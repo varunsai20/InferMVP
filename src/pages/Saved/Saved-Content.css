@@ -1,27 +1,53 @@
-* {
-}
 .note {
   background: #fcffff;
-  border-radius: 7px;
-  box-shadow: 0 2px 5px #ccc;
-  padding: 10px;
-  width: auto;
-  margin: 16px;
+  margin: 10px;
   margin-bottom: 0px;
   float: left;
   display: flex;
   flex-direction: column;
-  /* box-sizing: border-box; */
-  position: relative;
   bottom: 11.4rem;
-  width: 1255px;
-  left: 7.9rem;
+  position: inherit;
+  width: 850px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  right: 57px;
+  bottom: 42px;
 }
 .note h1 {
-  font-size: 1.1em;
-  margin: 0px;
+  font-size: 0.5em;
+  margin-bottom: 10px;
 }
 .note p {
-  font-size: 1.1em;
-  margin: 0px;
+  font-size: 0.5em;
+  margin: 5px 0px;
+}
+.note .Tags {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 16px;
+  gap: 8px;
+  width: 46px;
+  height: 23px;
+  opacity: 0.8;
+  border: 1px solid #a6a6a6;
+  border-radius: 1000px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.note .TagFrame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 16px;
+
+  width: 447px;
+  height: 23px;
+  left: 0px;
+  top: 45px;
 }
