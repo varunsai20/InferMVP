@@ -1,0 +1,58 @@
+.container-fluid {
+  /* position: relative; */
+  background-color: #f6f6f6;
+}
+#Library {
+  position: relative;
+  padding-left: 87px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 157px;
+  height: 33px;
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  color: #222222;
+}
+.navbar {
+  border-right-width: 0px;
+  padding-right: 0px;
+  width: 1300px;
+  position: relative;
+  padding-left: rem;
+  left: 16rem;
+  height: 80px;
+  width: 2070px;
+  background-color: #f6f6f6;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-right: solid #f7f7f7;
+}
+
+.Search {
+  position: relative;
+  width: 978px;
+  height: 56px;
+  background-color: #f6f6f6;
+  border-right-width: 2px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 20px;
+}
+.Form {
+  position: relative;
+  left: 350px;
+  width: 978px;
+  height: 56px;
+  bottom: 21px;
+  border-right-width: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 20px;
+}
