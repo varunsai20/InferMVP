@@ -161,6 +161,12 @@ body {
 .nav-text a:hover {
   background-color: #1a83ff;
 }
+.nav-text a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: #1a83ff;
+}
 
 .nav-menu-items {
   position: relative;
