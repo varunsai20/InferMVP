@@ -12,10 +12,17 @@ body {
 
 .home,
 .profile,
-.saved,
 .settings {
   display: flex;
   height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  flex-direction: column;
+}
+.saved {
+  display: flex;
+  height: fit-content;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
@@ -152,6 +159,12 @@ body {
 }
 
 .nav-text a:hover {
+  background-color: #1a83ff;
+}
+.nav-text a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
   background-color: #1a83ff;
 }
 

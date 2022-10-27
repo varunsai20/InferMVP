@@ -5,16 +5,19 @@ import "./Saved-Content.css";
 
 export default function SavedData() {
   return (
-    <div className="saved">
-      {notes.map((noteItem) => (
-        <SavedContent
-          key={noteItem.key}
-          title={noteItem.title}
-          tags={noteItem.tags}
-          Tags={noteItem.Tags}
-          content={noteItem.content}
-        />
-      ))}
-    </div>
+    <>
+      <div className="SavedContent-Display"></div>
+      <div className="saved">
+        {notes.map((noteItem) => (
+          <SavedContent
+            key={noteItem.key}
+            title={noteItem.title}
+            tags={noteItem.tags}
+            Tags={noteItem.Tags}
+            content={noteItem.content}
+          />
+        ))}
+      </div>
+    </>
   );
 }

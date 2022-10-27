@@ -22,7 +22,7 @@
   font-size: 0.5em;
   margin: 5px 0px;
 }
-.note .Tags {
+.Tags {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -32,22 +32,24 @@
   gap: 8px;
   width: 46px;
   height: 23px;
-  opacity: 0.8;
+
   border: 1px solid #a6a6a6;
   border-radius: 1000px;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
-.note .TagFrame {
+.TagFrame {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   padding: 0px;
   gap: 16px;
-
   width: 447px;
   height: 23px;
   left: 0px;
   top: 45px;
+}
+.SavedContent-Display {
+  padding-top: 80px;
 }
