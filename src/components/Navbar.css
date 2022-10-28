@@ -60,6 +60,7 @@ body {
   flex-grow: 0;
 }
 .welcome-frame {
+  height: 0px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
