@@ -13,10 +13,12 @@
   height: fit-content;
   right: 57px;
   bottom: 42px;
+  font-family: "Avenir Next";
 }
-.note h1 {
+.note a {
   font-size: 0.5em;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 .note p {
   font-size: 0.5em;
@@ -46,6 +48,7 @@
   padding: 0px;
   gap: 16px;
   width: 447px;
+  margin-top: 5px;
   height: 23px;
   left: 0px;
   top: 45px;
