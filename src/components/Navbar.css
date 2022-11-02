@@ -29,6 +29,8 @@ body {
   color: #cfcfcf;
   width: 1475px;
   flex-direction: column;
+  padding-left: 60px;
+  padding-top: 10px;
 }
 .saved {
   display: flex;
