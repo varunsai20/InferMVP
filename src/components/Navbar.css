@@ -149,6 +149,8 @@ body {
 .nav-menu.active {
   left: 0;
   transition: 350ms;
+  border-right: 2px solid #f7f7f7;
+  right: 0.05rem;
 }
 
 .nav-text {

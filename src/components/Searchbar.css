@@ -24,7 +24,7 @@
   width: 1300px;
   position: relative;
   padding-left: rem;
-  left: 16rem;
+  left: 16.05rem;
   height: 80px;
   width: 2070px;
   background-color: #f6f6f6;
@@ -32,7 +32,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-right: solid #f7f7f7;
+  border-left: 2px solid #f7f7f7;
+  border-bottom: 2px solid #f7f7f7;
 }
 
 Form.Control {
