@@ -20,6 +20,18 @@ body {
   font-size: 3rem;
   flex-direction: column;
 }
+.home {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  color: #cfcfcf;
+  width: 1475px;
+  flex-direction: column;
+  padding-left: 60px;
+  padding-top: 10px;
+}
 .saved {
   display: flex;
   height: fit-content;
@@ -41,7 +53,7 @@ body {
   position: absolute;
   width: 130.6px;
   height: 36px;
-  left: 53px;
+  left: 67px;
   top: 32px;
 }
 .Avatar {
@@ -137,6 +149,8 @@ body {
 .nav-menu.active {
   left: 0;
   transition: 350ms;
+  border-right: 2px solid #f7f7f7;
+  right: 0.05rem;
 }
 
 .nav-text {
