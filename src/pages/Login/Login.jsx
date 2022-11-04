@@ -1,20 +1,49 @@
 import React ,{ useState} from "react"
 import FormHeader from "./Formheader"
-import { Link , useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+
+import axios from "axios"
 import "./Login-styles.css"
 
-function Login(){
-    // const navigate=useNavigate('');
+const Login = () => {
+    // const Navigate=useNavigate('');
+    const history=useHistory('')
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
-  
+    const handleEmail=(e)=>{
+        setEmail(e.target.value)
+    }
+    const handlePass=(e)=>{
+        setPass(e.target.value)
+    }
+    const handleApi = () => {
+        axios.post('https://reqres.in/api/login',{
+            email: email,
+            password: pass
+        })
+        .then(result=>{
+            console.log(result.data)
+            alert("success")
+            // Navigate("/home")
+            history.push('/home')
+
+            
+
+        })
+        .catch(error=>{
+            console.log(error)
+            
+        })
+    }
     function handleSubmit(e){
         e.preventDefault();
 
 
     }
     return (
-            <div id="loginform">
+        <div className="Login-Page">
+            <div id="loginform" className="loginform">
                 <div className="frame">
                     <img src="https://www.infersol.com/wp-content/uploads/2020/02/logo.png"/>
                     <p id="version">Version 1.0</p>
@@ -23,18 +52,18 @@ function Login(){
                         <div className="row">
                             <form onSubmit={handleSubmit}>
                                 <div className="row">
-                                     <input value={email} onChange={(e)=> setEmail(e.target.value)} type="text" id="email" className="email" placeholder="Email"/>
+                                     <input value={email} onChange={handleEmail} type="text" id="email" className="email" placeholder="Email"/>
                                   
                                  </div>
                                  <div className="row">
-                                     <input value={pass} onChange={(e)=> setPass(e.target.value)} type="password" id="password" className="password" placeholder="Password"/>
+                                     <input value={pass} onChange={handlePass} type="password" id="password" className="password" placeholder="Password"/>
                                  </div>        
                                  <div className="row" id="button">
-                                 <Link to={"/home"}>
-                                    <button type="submit" >
+                                 
+                                    <button onClick={handleApi} >
                                      Login 
                                     </button>   
-                                    </Link>      
+                                         
                                  </div>        
                             </form>           
             
@@ -48,9 +77,10 @@ function Login(){
                         <p id="forgot"><a href="">Forgot Password</a></p>
                                                
                     </div>
-                    <label class="copyright">©Copyright Infer Solutions, Inc. All Rights Reserved</label>
+                    <label className="copyright">©Copyright Infer Solutions, Inc. All Rights Reserved</label>
 
                 </div>
+            </div>
             </div>)
     
 }

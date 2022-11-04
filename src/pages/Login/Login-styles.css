@@ -2,12 +2,13 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js');
 
-body{
-
+.Login-Page{
   font-family: "work sans";
-  /* background-image:  url("./images/login-background.png"); */
+    background-image:  url("./images/login-background.png");
   background-repeat:no-repeat;
   background-size: cover;
+  padding: 10rem auto;
+  padding-bottom: 8px;
 }
 
 html{
@@ -15,19 +16,21 @@ html{
   
 }
 
-#loginform{
+.loginform{
+    display: inline-block;
     width: 30%;
     height: 65%;
     margin: 100px auto;
+    margin-left: 35%;
     background-color: #FFFFFF;
     border-radius: 12px;
     text-align: center;
     padding-bottom: 26rem;
     
+    
   }
 
-.frame{
-  
+.frame{  
     display: flex;
     flex-direction: row;
     justify-content: space-between;

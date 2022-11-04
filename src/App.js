@@ -1,7 +1,7 @@
 import React from "react";
 import "../src/Styles.css";
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {Switch, Route } from "react-router-dom";
 import Login from "./pages/Login/Login"
 
 // PAGES
@@ -14,15 +14,13 @@ export default function App() {
   return (
     <div className="App">
       {/* <Login /> */}
-      <Router>
         <Switch>   
-          <Route path="/" component={Login} />
-          <Route path="/home" component={Home} />
-          <Route path="/profile" component={Profile} />
-          <Route path="/saved" component={Saved} />
-          <Route path="/settings" component={Settings} />
+          <Route exact path="/" component={Login} />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/saved" component={Saved} />
+          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/settings" component={Settings} />
         </Switch>
-      </Router>
     </div>
   );
 }
