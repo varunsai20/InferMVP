@@ -4,6 +4,8 @@ import SavedNav from "./Saved-Nav";
 import { getPosts } from "./axios";
 import { useState, useEffect } from "react";
 import ListPage from "./ListPage";
+import Navbar from "../../components/Navbar";
+
 export default function Home() {
   const [posts, setPosts] = useState([]);
   const [savedPosts, setSearchResults] = useState([]);
@@ -16,6 +18,7 @@ export default function Home() {
   }, []);
   return (
     <>
+    <Navbar/>
       <SavedNav />
       <div className="SavedContent-Display">
         <ListPage savedPosts={savedPosts} />
