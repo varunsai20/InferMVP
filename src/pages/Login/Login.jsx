@@ -1,4 +1,4 @@
-import React ,{ useState} from "react"
+import React ,{ useState,useEffect} from "react"
 import FormHeader from "./Formheader"
 import { useNavigate } from "react-router-dom";
 import { useHistory } from "react-router-dom";
@@ -10,26 +10,30 @@ const Login = () => {
     // const Navigate=useNavigate('');
     const history=useHistory('')
     const [email, setEmail] = useState('');
-    const [pass, setPass] = useState('');
+    const [password, setPassword] = useState('');
+    useEffect(() => {
+        if(localStorage.getItem('token')){
+            localStorage.removeItem("token");
+            
+        }
+      })
     const handleEmail=(e)=>{
         setEmail(e.target.value)
     }
     const handlePass=(e)=>{
-        setPass(e.target.value)
+        setPassword(e.target.value)
     }
     const handleApi = () => {
         axios.post('https://reqres.in/api/login',{
             email: email,
-            password: pass
+            password: password
         })
         .then(result=>{
             console.log(result.data)
             alert("success")
             // Navigate("/home")
+            localStorage.setItem('token',result.data.token)
             history.push('/home')
-
-            
-
         })
         .catch(error=>{
             console.log(error)
@@ -48,15 +52,15 @@ const Login = () => {
                     <img src="https://www.infersol.com/wp-content/uploads/2020/02/logo.png"/>
                     <p id="version">Version 1.0</p>
                     <FormHeader/>
-                    <div className="frame3">
-                        <div className="row">
+                    <div className="input-fields">
+                        
                             <form onSubmit={handleSubmit}>
                                 <div className="row">
                                      <input value={email} onChange={handleEmail} type="text" id="email" className="email" placeholder="Email"/>
                                   
                                  </div>
                                  <div className="row">
-                                     <input value={pass} onChange={handlePass} type="password" id="password" className="password" placeholder="Password"/>
+                                     <input value={password} onChange={handlePass} type="password" id="password" className="password" placeholder="Password"/>
                                  </div>        
                                  <div className="row" id="button">
                                  
@@ -67,12 +71,12 @@ const Login = () => {
                                  </div>        
                             </form>           
             
-                        </div>
+                        
                         <div className="remember">
                             <div className="remember-inside">
                                 <input type="checkbox" id="box" className="check-box"  />
                             </div>
-                            <label for="box">Remember Me</label>
+                            <label className="remember-label"for="box">Remember Me</label>
                         </div>
                         <p id="forgot"><a href="">Forgot Password</a></p>
                                                

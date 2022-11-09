@@ -9,6 +9,8 @@ import Home from "./pages/Home/Home";
 import Profile from "./pages/Profile/Profile";
 import Saved from "./pages/Saved/Saved";
 import Settings from "./pages/Settings/Settings";
+import { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 
 export default function App() {
   return (

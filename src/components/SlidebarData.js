@@ -30,8 +30,8 @@ export const SidebarData = [
     cName: "nav-text"
   },
   {
-    title: "LogOut",
-    path: "/settings",
+    title: "Log Out",
+    path: "/",
     icon: <AiIcons.AiFillSetting />,
     cName: "nav-text"
   }

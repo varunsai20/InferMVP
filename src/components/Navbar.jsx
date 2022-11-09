@@ -7,7 +7,7 @@ import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
 
 import { SidebarData } from "./SlidebarData";
-
+import getPosts from "../pages/Saved/axios"
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <>
       <IconContext.Provider value={{}}>
-        {/* <div class="navbar"> */}
+        
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <img
             className="Logo"
@@ -50,8 +50,7 @@ export default function Navbar() {
             })}
           </ul>
         </nav>
-        {/* <Search /> */}
-        {/* </div> */}
+        
       </IconContext.Provider>
     </>
   );

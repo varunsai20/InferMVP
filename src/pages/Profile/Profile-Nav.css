@@ -14,7 +14,7 @@
   align-items: center;
   color: #222222;
 }
-.navbar {
+.navbar-profile {
   border-right-width: 0px;
   padding-right: 0px;
   width: 1300px;
@@ -28,5 +28,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-right: solid #f7f7f7;
+  border-left: 2px solid #f7f7f7;
+  border-bottom: 2px solid #f7f7f7;
 }

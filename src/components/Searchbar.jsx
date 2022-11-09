@@ -8,8 +8,8 @@ import "./Searchbar.css";
 
 function Search() {
   return (
-    // <div class="navbar">
-    <Navbar bg="light" expand="lg">
+    
+    <Navbar className="navbar-search" bg="light" expand="lg">
       {/* <Container fluid> */}
       {/* <Navbar.Toggle aria-controls="navbarScroll" /> */}
       {/* <Navbar.Collapse id="navbarScroll"> */}

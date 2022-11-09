@@ -1,6 +1,14 @@
 import React from "react";
 import Search from "../../components/Searchbar";
+import { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 export default function HomePage() {
+  const history=useHistory('')
+  useEffect(() => {
+    if(!localStorage.getItem('token')){
+      history.push('/')
+    }
+  })
   return (
     <>
       <div className="home">

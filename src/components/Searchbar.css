@@ -9,7 +9,8 @@
   margin-bottom: 0px;
   width: 157px;
   height: 33px;
-  font-family: "Avenir Next LT Pro";
+  /* font-family: "Avenir Next LT Pro"; */
+  margin-right: 10px;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -18,7 +19,7 @@
   align-items: center;
   color: #222222;
 }
-.navbar {
+.navbar-search {
   border-right-width: 0px;
   padding-right: 0px;
   width: 1300px;
