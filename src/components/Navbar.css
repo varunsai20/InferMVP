@@ -1,5 +1,5 @@
 :root {
-  --navBg: #FFFFFF;
+  --navBg: #ffffff;
 }
 body {
   font-family: sans-serif;
@@ -9,7 +9,6 @@ body {
   font-family: "Lato", sans-serif;
   /* text-align: center; */
 }
-
 
 .profile,
 .settings {
@@ -29,7 +28,6 @@ body {
   color: #cfcfcf;
   width: 1475px;
   flex-direction: column;
- 
 }
 
 .saved {
