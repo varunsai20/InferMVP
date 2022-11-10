@@ -9,7 +9,7 @@ import Home from "./pages/Home/Home";
 import Profile from "./pages/Profile/Profile";
 import Saved from "./pages/Saved/Saved";
 import Settings from "./pages/Settings/Settings";
-import SearchScreen from "./pages/SearchScreen/SearchPage"
+import Search from "./pages/SearchScreen/search"
 import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 
@@ -27,7 +27,7 @@ export default function App(props) {
         <Switch>   
           <Route exact path="/" component={Login} />
           <Route exact path="/home" component={() => <Home setSearch={setSearch}/> } />
-          <Route exact path="/search" component={() => <SearchScreen searchTerm={searchTerm}/>} />
+          <Route exact path="/search" component={() => <Search searchTerm={searchTerm}/>} />
           <Route exact path="/saved" component={Saved} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/settings" component={Settings} />

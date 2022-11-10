@@ -8,7 +8,7 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import * as IoIcons from "react-icons/io";
-import "./Searchbar.css";
+import "../../components/Searchbar.css";
 
 export default function HomePage({setSearch}) {
   const history=useHistory('')
