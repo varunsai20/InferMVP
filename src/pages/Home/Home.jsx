@@ -1,13 +1,14 @@
 import React from "react";
-import Search from "../../components/Searchbar";
+
 import HomePage from "./HomePage";
 import Navbar from "../../components/Navbar";
-export default function Home() {
+const Home=({setSearch})=> {
   return (
     <>
-      <Navbar />
-      <Search />
-      <HomePage />
+      <Navbar />    
+      <HomePage setSearch={setSearch} />
     </>
   );
 }
+
+export default Home;

@@ -1,6 +1,6 @@
 .container-fluid {
   /* position: relative; */
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 #Library {
   position: relative;
@@ -28,7 +28,7 @@
   left: 16.05rem;
   height: 80px;
   width: 2070px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: 80px;
   display: flex;
   justify-content: flex-start;
@@ -37,12 +37,9 @@
   border-bottom: 2px solid #f7f7f7;
 }
 
-Form.Control {
-  position: absolute;
+input {
   width: 202px;
   height: 27px;
-  left: 72px;
-  top: 19px;
 
   font-family: "Avenir Next LT Pro";
   font-style: normal;
@@ -67,13 +64,13 @@ search {
   width: 978px;
   height: 56px;
   background-color: #f6f6f6;
-  border:0;
+  border: 0;
   padding-left: 1rem;
   padding-right: 0px;
   margin-right: 20px;
   border-radius: 8px;
 }
-.Form {
+.form {
   position: relative;
   left: 350px;
   width: 978px;

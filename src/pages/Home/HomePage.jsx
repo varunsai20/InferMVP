@@ -2,15 +2,49 @@ import React from "react";
 import Search from "../../components/Searchbar";
 import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
-export default function HomePage() {
+
+// import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import * as IoIcons from "react-icons/io";
+import "./Searchbar.css";
+
+export default function HomePage({setSearch}) {
   const history=useHistory('')
   useEffect(() => {
     if(!localStorage.getItem('token')){
       history.push('/')
     }
   })
+  const [term,setTerm]=useState('')
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+   if (
+      /^[a-zA-Z0-9].*/.test(term) ||
+      /^[a-zA-Z0-9]+[" "]/.test(term) ||
+      /^[" "]+[a-zA-Z0-9]/.test(term)
+    ) {
+      setSearch(term);
+    }
+    
+  }
   return (
     <>
+         <Navbar className="navbar-search" bg="light" expand="lg">
+    
+      <p id="Library">Library Search</p>
+      <form className="d-flex" id="Search" onSubmit={handleSubmit}>
+        <input
+          placeholder="Search"
+          type="text"
+          value={term}
+          className="Search"
+          aria-label="Search"
+          onChange={(event)=>setTerm(event.target.value)}
+        />
+      </form>
+    </Navbar>
       <div className="home">
         {/* <img src="" alt="searchIcon" id="searchIcon"/> */}
 
@@ -39,6 +73,7 @@ export default function HomePage() {
           Type the name of an article or Reasearch paper in the Search bar{" "}
         </h3>
       </div>
+      
     </>
   );
 }
