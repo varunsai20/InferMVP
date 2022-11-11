@@ -12,14 +12,16 @@ import Settings from "./pages/Settings/Settings";
 import Search from "./pages/SearchScreen/search"
 import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import {searchData} from "./api/googleSearch"
 
 export default function App(props) {
   const history=useHistory()
   const [searchTerm,setSearchTerm]=useState('');
   const setSearch=async(term)=>{
     setSearchTerm(term);
-    history.push("/search");
-    
+    // history.push("/search");
+    const data = await searchData(term);
+    console.log(data);
   }
   return (
     <div className="App">
