@@ -8,7 +8,7 @@ import SearchData from "./searchData/searchData";
 
 const SearchScreen = ({ searchTerm, setSearch, googleData }) => {
   const history = useHistory("");
-
+  
   console.log(googleData);
   useEffect(() => {
     if (searchTerm === "") {
