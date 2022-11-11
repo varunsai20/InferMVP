@@ -229,7 +229,7 @@ input::placeholder {
 }
 #forgot {
   margin: 0;
-  padding-top: 1rem;
+  padding: 0;
   position: absolute;
   height: 0;
   bottom: 14.45rem;
