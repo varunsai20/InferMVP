@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   /* padding: 10rem auto; */
-  padding-bottom: 3.6rem;
+  padding-bottom: 2.8rem;
 }
 
 html {
@@ -136,16 +136,17 @@ img {
     left:0; */
 
   /* top:9%; */
-  /* margin-left:auto;
+  /* 
     margin-right:auto;
     margin-top: 20%; */
+    margin-left:3rem;
   width: 75%;
   box-sizing: border-box;
   /* border: 5px; */
   font-size: 1.3rem;
-  padding-top: 2%;
+  padding-top: 5%;
   padding-left: 1.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   border: 1px solid rgba(149, 13, 13, 0.3);
   border-radius: 5px;
 }
@@ -157,20 +158,21 @@ img {
   /* margin-left:auto;
     margin-right:auto;
     margin-top: 20%; */
+    margin-left: 3rem;
   width: 75%;
   box-sizing: border-box;
   border: 5px;
   font-size: 1.3rem;
-  padding-top: 2%;
+  padding-top: 5%;
   padding-left: 1.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   border: 1px solid rgba(149, 13, 13, 0.3);
   border-radius: 5px;
 }
 
 input::placeholder {
   font-size: medium;
-  padding-top: 9px;
+  padding-top: 20px;
 }
 .row input:focus {
   box-shadow: inset 0px -3px 0px 0px rgba(34, 193, 195, 0.7);
@@ -183,7 +185,7 @@ input::placeholder {
 #box {
   position: absolute;
   left: 13.5%;
-  top: 60.7%;
+  top: 61.3%;
   /* bottom: 50.5%; */
   background: #a7a7a7;
 }
@@ -266,7 +268,7 @@ input::placeholder {
   /* margin-top: 1rem;
     margin-top: 1rem; */
   position: absolute;
-  top: 78%;
+  top: 82%;
   right: 6%;
 }
 .symbol {
