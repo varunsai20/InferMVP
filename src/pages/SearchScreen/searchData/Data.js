@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Data = ({ data }) => {
+const Data = ({ data,id }) => {
   return (
-    <div className="SearchPage">
+    <div className="SearcContent">
       <div className="note">
-        <a href="{data.formattedUrl}">{data.title}</a>
+        <a href="{data.htmlFormattedUrl}">{data.title}</a>
         <div className="TagFrame">
           <p>Tags : </p>
-          <p className="Tags">{}</p>
+          <p className="Tags">{id}</p>
         </div>
         <p>{data.snippet}</p>
       </div>

@@ -8,8 +8,8 @@ const SearchData = ({ googleData }) => {
         {googleData?.searchInformation.formattedTotalResults} these results
         found in {googleData?.searchInformation.formattedSearchTime}
       </p> */}
-      {googleData?.items.map((data) => (
-        <Data data={data}  />
+      {googleData?.items.map((data,id) => (
+        <Data data={data} key={id} />
       ))}
     </div>
   );

@@ -5,6 +5,7 @@ function search({searchTerm,googleData}){
     return(
         <>
         <Navbar />
+        
         <SearchPage searchTerm={searchTerm} googleData={googleData}/>
         </>
     )
