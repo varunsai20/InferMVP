@@ -5,9 +5,10 @@ import Navbar from "react-bootstrap/Navbar";
 // import Searchbar from "../../components/Searchbar"
 import "../../components/Searchbar.css"
 
-const SearchScreen = ({searchTerm, setSearch}) => {
+const SearchScreen = ({searchTerm,setSearch, googleData}) => {
     const history=useHistory('');
     
+    console.log(googleData);
     useEffect(()=>{
         if(searchTerm===''){
             history.push("/home");

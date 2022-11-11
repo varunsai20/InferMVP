@@ -17,11 +17,14 @@ import {searchData} from "./api/googleSearch"
 export default function App(props) {
   const history=useHistory()
   const [searchTerm,setSearchTerm]=useState('');
+  const [googleData,setGoogleData]=useState({});
   const setSearch=async(term)=>{
     setSearchTerm(term);
-    // history.push("/search");
     const data = await searchData(term);
-    console.log(data);
+    setGoogleData(data);
+    history.push("/search");
+   
+    
   }
   return (
     <div className="App">
@@ -29,7 +32,7 @@ export default function App(props) {
         <Switch>   
           <Route exact path="/" component={Login} />
           <Route exact path="/home" component={() => <Home setSearch={setSearch}/> } />
-          <Route exact path="/search" component={() => <Search searchTerm={searchTerm}/>} />
+          <Route exact path="/search" component={() => <Search searchTerm={searchTerm} googleData={googleData}/>} />
           <Route exact path="/saved" component={Saved} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/settings" component={Settings} />
