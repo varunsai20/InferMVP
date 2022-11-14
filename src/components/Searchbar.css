@@ -23,7 +23,7 @@
   border-right-width: 0px;
   padding-right: 0px;
   width: 1300px;
-  position: relative;
+  position: fixed;
   padding-left: rem;
   left: 16.05rem;
   height: 80px;
@@ -69,6 +69,7 @@ search {
   padding-right: 0px;
   margin-right: 20px;
   border-radius: 8px;
+  margin-top: 16px;
 }
 .form {
   position: relative;
