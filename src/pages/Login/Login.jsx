@@ -30,7 +30,7 @@ const Login = () => {
         })
         .then(result=>{
             console.log(result.data)
-            alert("success")
+            
             // Navigate("/home")
             localStorage.setItem('token',result.data.token)
             history.push('/home')
