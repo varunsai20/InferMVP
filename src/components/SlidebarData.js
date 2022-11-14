@@ -14,7 +14,7 @@ export const SidebarData = [
   {
     title: "Saved",
     path: "/saved",
-    icon: <FaIcons.FaBookmark />,
+    icon: <AiIcons.AiFillBook />,
     cName: "nav-text"
   },
   {
@@ -30,7 +30,7 @@ export const SidebarData = [
     cName: "nav-text"
   },
   {
-    title: "Log Out",
+    title: "LogOut",
     path: "/",
     icon: <AiIcons.AiFillSetting />,
     cName: "nav-text"
