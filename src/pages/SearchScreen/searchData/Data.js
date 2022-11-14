@@ -7,7 +7,7 @@ const Data = ({ data,id }) => {
         <a href="{data.htmlFormattedUrl}">{data.title}</a>
         <div className="TagFrame">
           <p>Tags : </p>
-          <p className="Tags">{id}</p>
+          <p className="Tags">{data.id}</p>
         </div>
         <p>{data.snippet}</p>
       </div>
