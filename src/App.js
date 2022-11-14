@@ -32,12 +32,7 @@ export default function App(props) {
         <Switch>   
           <Route exact path="/" component={Login} />
           <Route exact path="/home" component={() => <Home setSearch={setSearch}/> } />
-         
-              <Route exact path="/search" component={() => <Search searchTerm={searchTerm} googleData={googleData}/>} />
-
-            
-          
-          
+          <Route exact path="/search" component={() => <Search searchTerm={searchTerm} googleData={googleData}/>} />          
           <Route exact path="/saved" component={Saved} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/settings" component={Settings} />
