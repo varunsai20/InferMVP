@@ -144,7 +144,7 @@ img {
   box-sizing: border-box;
   /* border: 5px; */
   font-size: 1.3rem;
-  padding-top: 5%;
+  padding-top: 1.5rem;
   padding-left: 1.5rem;
   padding-bottom: 2rem;
   border: 1px solid rgba(149, 13, 13, 0.3);
@@ -162,7 +162,7 @@ img {
   box-sizing: border-box;
   border: 5px;
   font-size: 1.3rem;
-  padding-top: 5%;
+  padding-top: 1.5rem;
   padding-left: 1.5rem;
   padding-bottom: 2rem;
   border: 1px solid rgba(149, 13, 13, 0.3);
