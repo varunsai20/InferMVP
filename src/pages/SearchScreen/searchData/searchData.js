@@ -1,6 +1,6 @@
 import React from "react";
 import Data from "./Data";
-const SearchData = ({ googleData }) => {
+const SearchData = ({ googleData,searchTerm }) => {
   return (
     <div>
       {/* <p className="small text-dark">
@@ -9,7 +9,7 @@ const SearchData = ({ googleData }) => {
         found in {googleData?.searchInformation.formattedSearchTime}
       </p> */}
       {googleData?.items.map((data,id) => (
-        <Data data={data} key={id} />
+        <Data data={data} key={id} searchTerm={searchTerm}/>
       ))}
     </div>
   );

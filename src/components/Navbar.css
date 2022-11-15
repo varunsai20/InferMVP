@@ -8,6 +8,7 @@ body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   /* text-align: center; */
+  min-height: 100vh;
 }
 
 .profile,
@@ -206,4 +207,20 @@ body {
 
 span {
   margin-left: 16px;
+}
+
+@media screen and (max-width: 935px) {
+  .home,.saved{
+    width: 880px;
+    /* background-color: #1a83ff; */
+
+  }
+  .home{
+    padding-left: 31%;
+    width: fit-content;
+  }
+  .nav-menu{
+    height: fit-content;
+  }
+  
 }

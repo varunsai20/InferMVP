@@ -3,7 +3,7 @@ import "./Saved-Content.css";
 const Post = ({ post }) => {
   return (
     <div className="saved">
-      <div className="note">
+      <div className="saved-note">
         <a href="">{post.title}</a>
         <div className="TagFrame">
           <p>Tags : </p>

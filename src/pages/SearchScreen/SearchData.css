@@ -33,9 +33,9 @@
   align-items: center;
   padding: 2px 16px;
   gap: 8px;
-  width: 46px;
+  width: fit-content;
   height: 23px;
-
+  font-family: avenir;
   border: 1px solid #a6a6a6;
   border-radius: 1000px;
   flex: none;
@@ -56,4 +56,13 @@
 }
 .SavedContent-Display {
   padding-top: 80px;
+}
+
+@media screen and (max-width: 935px) {
+  .note{
+    width: 609px;
+    padding-left: 22%;
+    /* font-size: .25em; */
+  }
+  
 }

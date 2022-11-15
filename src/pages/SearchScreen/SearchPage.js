@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import "./searchPage.css";
+import "./SearchData.css";
 import Navbar from "react-bootstrap/Navbar";
 // import Searchbar from "../../components/Searchbar"
 import "../../components/Searchbar.css";
@@ -43,7 +44,7 @@ const SearchScreen = ({ searchTerm, setSearch, googleData }) => {
         </form>
       </Navbar>
       <div className="SearchPage">
-        <SearchData googleData={googleData} />
+        <SearchData googleData={googleData} searchTerm={searchTerm}/>
       </div>
     </>
   );

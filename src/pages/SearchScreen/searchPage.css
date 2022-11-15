@@ -15,4 +15,10 @@
   padding-top: 100px;
   padding-bottom: 50px;
 }
+@media screen and (max-width: 935px) {
+  .SearchPage{
+    width: 880px;
+    /* background-color: #1a83ff; */
 
+  }
+}

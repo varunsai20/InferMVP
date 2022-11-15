@@ -1,4 +1,4 @@
-.note {
+.saved-note {
   background: #fcffff;
   margin: 10px;
   margin-bottom: 0px;
@@ -15,12 +15,12 @@
   bottom: 42px;
   font-family: "Avenir Next";
 }
-.note a {
+.saved-note a {
   font-size: 0.5em;
   margin-bottom: 10px;
   text-decoration: none;
 }
-.note p {
+.saved-note p {
   font-size: 0.5em;
   margin: 5px 0px;
 }
@@ -55,4 +55,12 @@
 }
 .SavedContent-Display {
   padding-top: 80px;
+}
+@media screen and (max-width: 935px) {
+  .saved-note{
+    width: 609px;
+    padding-left: 22%;
+    /* font-size: .25em; */
+  }
+  
 }
