@@ -19,6 +19,7 @@
   font-size: 0.5em;
   margin-bottom: 10px;
   text-decoration: none;
+  display: inline-flex;
 }
 .note-header #add-note-saved{
   
@@ -38,12 +39,12 @@
   display: inline-flex;
   
 } */
-.note-header a:hover + .add-delete {
-  display: -webkit-inline-box;  
+a:hover + .add-delete {
+  display:block;  
 }
-.note-header a:hover::after{
-  user-select: all;
-}
+/* .note-header a:hover::after + .add-delete{
+  
+} */
 .add-note-span{
   margin-left:5px;
 }
@@ -56,6 +57,7 @@
   /* background-color: blue; */
   width: 1000px;
   padding-left: 1px;
+  display: inline-flex;
 }
 .saved-note p {
   font-size: 0.5em;
@@ -85,7 +87,7 @@
   padding: 0px;
   gap: 16px;
   width: 447px;
-  margin-top: 20px;
+  margin-top: 10px;
   height: 23px;
   left: 0px;
   top: 45px;
