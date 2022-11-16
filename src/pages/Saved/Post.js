@@ -8,11 +8,12 @@ const Post = ({ post }) => {
     <div className="saved">
       <div className="saved-note">
       <div className="note-header">
-        <a href="">{post.title}</a>
+        <a href="">{post.title}
         <div className="add-delete">
         <a href="" className="add-delete-saved" id="add-note-saved"><FaIcons.FaRegStickyNote /><span className="add-note-span">Add a note</span></a>
         <a href="" className="add-delete-saved" id="delete-note"><MdIcons.MdDeleteForever/><span className="delete-note-span"/>Remove</a>
         </div>
+        </a>
         </div>
       <div className="TagFrame-Saved">
           <p>Tags : </p>

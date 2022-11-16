@@ -25,9 +25,12 @@
   
   margin:5px 5px 0 30px;
 }
-
+/* #delete-note{
+  top: 10px;
+} */
 .add-delete{
   display: none;
+  font-size: 1.5em;
 }
 
 /* .saved-note a:hover{
@@ -39,8 +42,12 @@
   display: inline-flex;
   
 } */
-a:hover + .add-delete {
-  display:block;  
+a:hover  {
+  color:rgb(103, 103, 103);
+ 
+}
+a:hover .add-delete{
+  display: inline-flex;
 }
 /* .note-header a:hover::after + .add-delete{
   
