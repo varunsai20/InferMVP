@@ -3,14 +3,21 @@ import "./Saved-Content.css";
 import {Link} from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import * as MdIcons from "react-icons/md"
+import { useHistory } from "react-router-dom";
 const Post = ({ post }) => {
+  const history=useHistory('')
+  function handleSubmit(e){
+    e.preventDefault();
+    history.push('/saved/add-note')
+
+}
   return (
     <div className="saved">
       <div className="saved-note">
       <div className="note-header">
         <a href="">{post.title}
         <div className="add-delete">
-        <a href="" className="add-delete-saved" id="add-note-saved"><FaIcons.FaRegStickyNote /><span className="add-note-span">Add a note</span></a>
+        <a href="" className="add-delete-saved" id="add-note-saved" onClick={handleSubmit}><FaIcons.FaRegStickyNote /><span className="add-note-span">Add a note</span></a>
         <a href="" className="add-delete-saved" id="delete-note"><MdIcons.MdDeleteForever/><span className="delete-note-span"/>Remove</a>
         </div>
         </a>
