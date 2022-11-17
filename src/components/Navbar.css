@@ -11,7 +11,15 @@ body {
   min-height: 100vh;
 }
 
-.profile,
+.profile{
+    /* display: flex; */
+    height: 80vh;
+    width: 1475px;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 3rem; */
+    flex-direction: column;
+}
 .settings {
   display: flex;
   height: 90vh;
@@ -41,6 +49,7 @@ body {
   font-size: 3rem;
   width: 1475px;
   flex-direction: column;
+  z-index: -1;
 }
 .sidebar {
   background-color: #f6f6f6;

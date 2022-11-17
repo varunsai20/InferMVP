@@ -6,20 +6,22 @@ import * as MdIcons from "react-icons/md"
 import { useHistory } from "react-router-dom";
 import AddNote from "./addNote/addNote";
 const Post = ({ post }) => {
-  const [openAddNote, setAddNote] = useState(false);
+  const [openAddNote, setOpenAddNote] = useState(false);
   const history=useHistory('')
 //   function handleSubmit(e){
 //     e.preventDefault();
 //     history.push('/saved/add-note')
 
 // }
+
   return (
+    <>
     <div className="saved">
       <div className="saved-note">
       <div className="note-header">
         <a href="">{post.title}
         <div className="add-delete">
-        <a href="" className="add-delete-saved" id="add-note-saved" onClick={() => setAddNote(true)} ><FaIcons.FaRegStickyNote /><span className="add-note-span">Add a note</span></a>
+        <a href="" className="add-delete-saved" id="add-note-saved" onClick={() => setOpenAddNote(true)} ><FaIcons.FaRegStickyNote /><span className="add-note-span">Add a note</span></a>
         <a href="" className="add-delete-saved" id="delete-note"><MdIcons.MdDeleteForever/><span className="delete-note-span"/>Remove</a>
         </div>
         </a>
@@ -29,9 +31,11 @@ const Post = ({ post }) => {
           <p className="Tags">{post.id}</p>
       </div>
         <p>{post.body}</p>
-      </div>
-      <AddNote open={openAddNote} />
+      </div>      
+      <AddNote open={openAddNote} onClose={() => setOpenAddNote(false)} />
     </div>
+
+    </>
   );
 };
 export default Post;
