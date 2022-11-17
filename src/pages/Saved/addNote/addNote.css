@@ -10,7 +10,7 @@
   box-shadow: -7px 4px 31px 24px rgba(0, 0, 0, 0.03);
 }
 
-.body {
+/* .body {
   position: absolute;
   width: 1440px;
   height: 750px;
@@ -18,7 +18,7 @@
   top: 0px;
  
   backdrop-filter: blur(8px);
-}
+} */
 .body .add-note-popup{
     background: rgba(207, 206, 206, 0.61);
 }

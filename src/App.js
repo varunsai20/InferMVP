@@ -13,7 +13,7 @@ import Search from "./pages/SearchScreen/search"
 import { useState, useEffect } from "react";
 import { useHistory ,Redirect} from "react-router-dom";
 import {searchData} from "./api/googleSearch"
-import addNote from "./pages/Saved/addNote/addNote";
+// import addNote from "./pages/Saved/addNote/addNote";
 
 export default function App(props) {
   const history=useHistory()
@@ -35,7 +35,7 @@ export default function App(props) {
           <Route exact path="/home" component={() => <Home setSearch={setSearch}/> } />
           <Route exact path="/search" component={() => <Search searchTerm={searchTerm} googleData={googleData}/>} />          
           <Route exact path="/saved" component={Saved} />
-          <Route exact path="/saved/add-note" component={addNote} />
+          {/* <Route exact path="/saved/add-note" component={addNote} /> */}
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/settings" component={Settings} />
         </Switch>

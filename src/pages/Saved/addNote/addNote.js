@@ -1,15 +1,15 @@
 import "./addNote.css";
 import React,{useState} from "react";
 import { useHistory } from "react-router-dom";
-export default function AddNote() {
+export default function AddNote({open}) {
   const history=useHistory('')
   function handleSubmit(e){
     e.preventDefault();
     history.push('/saved')
   }
+  if (!open) return null;
   return (
-    <div className="body">
-    <div className="add-note-popup">
+       <div  className="add-note-popup">
       <h3 className="header-title">Add a Note</h3>
       <h3 className="note-title">Start editing to see some magic happen!</h3>
       <div>
@@ -37,6 +37,6 @@ export default function AddNote() {
         <button className="cancel-button" onClick={handleSubmit}>Cancel</button>
       </div>
     </div>
-    </div>
+    
   );
 }
