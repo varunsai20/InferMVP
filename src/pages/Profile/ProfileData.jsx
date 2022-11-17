@@ -15,15 +15,15 @@ export default function ProfileData() {
         </div>    
       </div>
     <div className="profile-details">
-        <div className="row">
+        <div className="row-data">
         <label for="profile-name" className="profile-headings">Full Name</label><br/>
         <input type="text" contenteditable="true" className="profile-name profile-values" id="profile-name" value="Varun Darawi"></input>
         </div>
-        <div className="row">
+        <div className="row-data">
         <label className="profile-headings">Email</label><br />
         <input type="text" className="profile-email profile-values" value="varunkumard10@gmail.com"></input>
         </div>
-        <div className="row">
+        <div className="row-data">
         <label className="profile-headings">Password</label><br />
         <input type="text" className="profile-number profile-values" value="+91 96574655600"></input>  
         </div>
