@@ -9,7 +9,16 @@
   border-right: 1px solid #f7f7f7;
   /* box-shadow: -7px 4px 31px 24px rgba(0, 0, 0, 0.03); */
 }
+.body{
+  position: fixed;
+width: 1519px;
+height: 1024px;
+left: 0px;
+top: 0px;
 
+background: rgba(207, 206, 206, 0.61);
+backdrop-filter: blur(8px);
+}
 .add-note-popup{
   background: rgba(207, 206, 206, 0.61);
   backdrop-filter: blur(50px);
@@ -119,7 +128,7 @@ h4 {
   white-space: nowrap;
   cursor: pointer;
   font-size: 30px;
-  color: #ccc;
+  color: rgb(241, 241, 241);
 }
 .rate:not(:checked) > label:before {
   content: "★ ";
