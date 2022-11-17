@@ -3,7 +3,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js");
 
 .Login-Page {
-  font-family: "work sans";
+  font-family: 'Avenir';
   background-image: url("./images/login-background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,6 +13,7 @@
 
 html {
   font-size: 100%;
+
 }
 
 .loginform {
@@ -140,6 +141,7 @@ img {
   /* margin-left:auto;
     margin-right:auto;
     margin-top: 20%; */
+    font-family: 'Avenir';
   width: 81%;
   box-sizing: border-box;
   /* border: 5px; */
@@ -158,6 +160,7 @@ img {
   /* margin-left:auto;
     margin-right:auto;
     margin-top: 20%; */
+    font-family: 'Avenir';
   width: 81%;
   box-sizing: border-box;
   border: 5px;
@@ -287,7 +290,7 @@ input::placeholder {
     
   } 
   #forgot{
-    display: block;
+    display: block; 
     bottom: 77px;
     left: 5%;
   }

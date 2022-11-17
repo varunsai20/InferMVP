@@ -1,7 +1,11 @@
-import React from "react";
+import React,{useState} from "react";
 import "./profile-data.css"
 export default function ProfileData() {
-  return (
+
+  var [name, setName] = useState("Varun Darwai");
+  var [email, setEmail] = useState("varunkumard10@gmail.com");
+  var [phone, setPhone] = useState("+91 9576248020"); 
+    return (
     <><div className="profile">
       <div className="profile-pic">
         <img
@@ -17,15 +21,15 @@ export default function ProfileData() {
     <div className="profile-details">
         <div className="row-data">
         <label for="profile-name" className="profile-headings">Full Name</label><br/>
-        <input type="text" contenteditable="true" className="profile-name profile-values" id="profile-name" value="Varun Darawi"></input>
+        <input type="text" contenteditable="true" className="profile-name profile-values" onChange={(e) => setName(e.target.value)} id="profile-name" value={name}></input>
         </div>
         <div className="row-data">
         <label className="profile-headings">Email</label><br />
-        <input type="text" className="profile-email profile-values" value="varunkumard10@gmail.com"></input>
+        <input type="text" contenteditable="true" className="profile-email profile-values" onChange={(e) => setEmail(e.target.value)} value={email}></input>
         </div>
         <div className="row-data">
-        <label className="profile-headings">Password</label><br />
-        <input type="text" className="profile-number profile-values" value="+91 96574655600"></input>  
+        <label className="profile-headings">Phone Number</label><br />
+        <input type="text" contenteditable="true" className="profile-number profile-values" onChange={(e) => setPhone(e.target.value)} value={phone}></input>  
         </div>
     </div>
     </div>
