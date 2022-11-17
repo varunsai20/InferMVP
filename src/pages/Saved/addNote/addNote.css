@@ -10,8 +10,9 @@
   /* box-shadow: -7px 4px 31px 24px rgba(0, 0, 0, 0.03); */
 }
 
-body{
-  /* z-index: 1; */
+.add-note-popup{
+  background: rgba(207, 206, 206, 0.61);
+  backdrop-filter: blur(50px);
 }
  .add-note-popup{
     /* background: rgba(207, 206, 206, 0.61); */
@@ -59,7 +60,7 @@ body{
   padding-bottom: 50%;
   padding-right: 0%;
   padding-top: 0%;
-  font-size: 1.3em;
+  font-size: .51em;
 }
 
 .input-box::placeholder {

@@ -47,9 +47,16 @@ a:hover  {
   color:rgb(103, 103, 103);
  
 }
-a:hover .add-delete{
+a:hover + .add-delete{
   display: inline-flex;
+  font-size: .7em;
 }
+.add-delete:hover{
+  display: inline-flex;
+  font-size: .7em;
+  cursor: pointer;
+}
+
 /* .note-header a:hover::after + .add-delete{
   
 } */

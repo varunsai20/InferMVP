@@ -20,11 +20,12 @@ const Post = ({ post }) => {
       <div className="saved-note">
       <div className="note-header">
         <a href="">{post.title}
-        <div className="add-delete">
-        <a href="" className="add-delete-saved" id="add-note-saved" onClick={() => setOpenAddNote(true)} ><FaIcons.FaRegStickyNote /><span className="add-note-span">Add a note</span></a>
-        <a href="" className="add-delete-saved" id="delete-note"><MdIcons.MdDeleteForever/><span className="delete-note-span"/>Remove</a>
-        </div>
+        
         </a>
+        <div className="add-delete">
+        <a  className="add-delete-saved" id="add-note-saved" onClick={() => setOpenAddNote(true)} ><FaIcons.FaRegStickyNote /><span className="add-note-span">Add a note</span></a>
+        <a  className="add-delete-saved" id="delete-note"><MdIcons.MdDeleteForever/><span className="delete-note-span"/>Remove</a>
+        </div>
         </div>
       <div className="TagFrame-Saved">
           <p>Tags : </p>
