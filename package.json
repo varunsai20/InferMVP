@@ -11,10 +11,11 @@
     "react-bootstrap": "2.5.0",
     "react-dom": "17.0.0",
     "react-icons": "^4.6.0",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^6.4.3",
     "react-scripts": "3.4.3"
   },
   "devDependencies": {
+    "eslint-plugin-react-hooks": "^1.7.0",
     "typescript": "3.8.3"
   },
   "scripts": {
