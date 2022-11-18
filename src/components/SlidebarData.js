@@ -3,6 +3,7 @@ import React from "react";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
+import * as VscIcons from "react-icons/vsc"
 
 export const SidebarData = [
   {
@@ -32,7 +33,7 @@ export const SidebarData = [
   {
     title: "LogOut",
     path: "/",
-    icon: <AiIcons.AiFillSetting />,
+    icon: <VscIcons.VscSettings />,
     cName: "nav-text"
   }
 ];
