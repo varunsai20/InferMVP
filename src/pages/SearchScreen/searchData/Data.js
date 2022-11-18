@@ -4,9 +4,12 @@ const Data = ({ data ,searchTerm}) => {
   return (
     <div className="SearcContent">
       <div className="note">
-        <a href="{data.htmlFormattedUrl}">{data.title}</a>
+        <div className="search-title-header">
+          <a href="{data.htmlFormattedUrl}">{data.title}</a>
+          <a href="" id="save-tag">SavePost</a>
+        </div>
         <div className="TagFrame">
-          <p>Tags : </p>
+          <p id="Tags">Tags : </p>
           <p className="Tags">{searchTerm}</p>
         </div>
         <p>{data.snippet}</p>
@@ -17,13 +20,3 @@ const Data = ({ data ,searchTerm}) => {
 
 export default Data;
 
-//  <div className="saved">
-//       <div className="note">
-//         <a href="">{post.title}</a>
-//         <div className="TagFrame">
-//           <p>Tags : </p>
-//           <p className="Tags">{post.id}</p>
-//         </div>
-//         <p>{post.body}</p>
-//       </div>
-//     </div>
