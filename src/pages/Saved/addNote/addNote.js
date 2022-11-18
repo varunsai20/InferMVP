@@ -15,8 +15,8 @@ export default function AddNote({open,onClose  }) {
        <div className="add-note-popup">
       <h3 className="header-title">Add a Note</h3>
       <h3 className="note-title">Note title</h3>
-      <div>
-        <input
+      <div >
+        <input id="add-note-input"
           type="text"
           className="input-box"
           placeholder="start typing here"

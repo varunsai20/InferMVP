@@ -5,7 +5,7 @@
   height: 780px;
   left: 1045px;
   top: 5px;
-  background: #8d8c8c;
+  background: #FFFFFF;
   border-right: 1px solid #f7f7f7;
   /* box-shadow: -7px 4px 31px 24px rgba(0, 0, 0, 0.03); */
 }
@@ -20,7 +20,7 @@ background: rgba(207, 206, 206, 0.61);
 backdrop-filter: blur(8px);
 }
 .add-note-popup{
-  background: rgba(207, 206, 206, 0.61);
+  /* background: rgba(207, 206, 206, 0.61); */
   backdrop-filter: blur(50px);
 }
  .add-note-popup{
@@ -56,11 +56,15 @@ backdrop-filter: blur(8px);
   align-items: center;
   color: #222222;
 }
+
+#add-note-input{
+  width: 409px;
+  height: 402px;
+}
 .input-box {
   box-sizing: border-box;
   position: absolute;
-  width: 409px;
-  height: 402px;
+
   left: 32px;
   top: 150px;
   background: #f6f6f6;
@@ -175,6 +179,7 @@ h4 {
   flex: none;
   order: 0;
   flex-grow: 0;
+  color: #FFFFFF;
 }
 .cancel-button {
   box-sizing: border-box;
