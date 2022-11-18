@@ -29,7 +29,7 @@
   height: 80px;
   width: 2070px;
   background-color: #ffffff;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -62,7 +62,7 @@ search {
 .Search {
   position: relative;
   width: 978px;
-  height: 56px;
+  height: 70px;
   background-color: #f6f6f6;
   border: 0;
   padding-left: 1rem;

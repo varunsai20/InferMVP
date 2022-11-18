@@ -5,6 +5,7 @@
     position: relative;
     left: 17%;
     top: 8rem;
+    font-family: 'Avenir Next';
 }
 .Profile-Avatar{
     width: 126px;
@@ -17,7 +18,7 @@
     position: absolute;
 }
 a{
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 .remove-pic{
     margin-bottom: 15px;
@@ -53,12 +54,13 @@ display: flex;
 align-items: center;
 letter-spacing: 0.355em;
 color: #BEBEBE;
+padding: 10px 0;
 }
 .profile-values{
         
     font-family: 'Avenir Next';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 24px;
     line-height: 15px;
     display: flex;

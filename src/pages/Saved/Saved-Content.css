@@ -56,7 +56,9 @@ a:hover + .add-delete{
   font-size: .7em;
   cursor: pointer;
 }
-
+ #delete-note{
+  padding-top: 5px;
+}
 /* .note-header a:hover::after + .add-delete{
   
 } */
@@ -108,7 +110,8 @@ a:hover + .add-delete{
   top: 45px;
 }
 .SavedContent-Display {
-  padding-top: 80px;
+  padding-top: 120px;
+  background-color: #FCFFFF;
 }
 @media screen and (max-width: 935px) {
   .saved-note{

@@ -20,15 +20,15 @@ export default function ProfileData() {
       </div>
     <div className="profile-details">
         <div className="row-data">
-        <label for="profile-name" className="profile-headings">Full Name</label><br/>
+        <label for="profile-name" className="profile-headings">Full Name</label>
         <input type="text" contenteditable="true" className="profile-name profile-values" onChange={(e) => setName(e.target.value)} id="profile-name" value={name}></input>
         </div>
         <div className="row-data">
-        <label className="profile-headings">Email</label><br />
+        <label className="profile-headings">Email</label>
         <input type="text" contenteditable="true" className="profile-email profile-values" onChange={(e) => setEmail(e.target.value)} value={email}></input>
         </div>
         <div className="row-data">
-        <label className="profile-headings">Phone Number</label><br />
+        <label className="profile-headings">Phone Number</label>
         <input type="text" contenteditable="true" className="profile-number profile-values" onChange={(e) => setPhone(e.target.value)} value={phone}></input>  
         </div>
     </div>
