@@ -41,6 +41,7 @@ body {
   flex-direction: column;
   padding-top: 100px;
   padding-left: 50px;
+  color: #CFCFCF  ;
 }
 
 .saved {
