@@ -36,13 +36,15 @@ line-height: 33px;
 .note-header #add-note-saved{
   
   margin:5px 5px 0 30px;
+  color: #305BA5;
 }
-/* #delete-note{
-  top: 10px;
-} */
+#delete-note{
+  color: #305BA5;
+}
 .add-delete{
   display: none;
   font-size: 1.5em;
+  color: #305BA5;
 }
 
 /* .saved-note a:hover{
@@ -55,7 +57,8 @@ line-height: 33px;
   
 } */
 a:hover  {
-  color:rgb(103, 103, 103);
+  color:
+  #305BA5;
  
 }
 a:hover + .add-delete{
@@ -66,6 +69,8 @@ a:hover + .add-delete{
   display: inline-flex;
   font-size: .7em;
   cursor: pointer;
+  
+
 }
  #delete-note{
   padding-top: 5px;
