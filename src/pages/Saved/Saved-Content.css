@@ -72,6 +72,10 @@ a:hover + .add-delete{
   line-height: 1;
   font-size: 19px;
 }
+.delete-icon{
+  height: 24px;
+  width: 23px;
+}
 /* .note-header a:hover::after + .add-delete{
   
 } */

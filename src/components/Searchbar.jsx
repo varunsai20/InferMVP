@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import * as IoIcons from "react-icons/io";
+import * as FaIcons from "react-icons/fa";
 // import "./Searchbar.css";
 
 const Search=({setSearch}) => {
@@ -27,7 +28,7 @@ const Search=({setSearch}) => {
           className="Search"
           aria-label="Search"
           onChange={(event)=>setTerm(event.target.value)}
-        />
+        ></input>
       </form>
     </Navbar>
 

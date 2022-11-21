@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import * as FaIcons from "react-icons/fa";
 const Data = ({ data ,searchTerm}) => {
   return (
     <>
@@ -8,7 +9,7 @@ const Data = ({ data ,searchTerm}) => {
       <div className="note">
         <div className="search-title-header">
           <a href="{data.htmlFormattedUrl}">{data.title}</a>
-          {/* <a href="" id="save-tag">SavePost</a> */}
+          <p href="" ><FaIcons.FaRegBookmark className="save-post"/></p>
         </div>
         <div className="TagFrame">
           <p id="Tags">Tags : </p>

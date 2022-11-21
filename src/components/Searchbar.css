@@ -59,13 +59,16 @@ input {
 search {
   right: 10px;
 }
+#search-logo{
+  padding-top: 100px;
+}
 .Search {
   position: relative;
   width: 978px;
   height: 70px;
   background-color: #f6f6f6;
   border: 0;
-  padding-left: 1rem;
+  padding-left: 3rem;
   padding-right: 0px;
   margin-right: 20px;
   border-radius: 15px;
