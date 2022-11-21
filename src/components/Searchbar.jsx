@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import * as IoIcons from "react-icons/io";
+import * as BsIcons from "react-icons/bs";
 import * as FaIcons from "react-icons/fa";
-// import "./Searchbar.css";
+import "./Searchbar.css";
 
 const Search=({setSearch}) => {
   const [term,setTerm]=useState('')
@@ -29,7 +29,9 @@ const Search=({setSearch}) => {
           aria-label="Search"
           onChange={(event)=>setTerm(event.target.value)}
         ></input>
+        
       </form>
+      
     </Navbar>
 
   );

@@ -16,6 +16,11 @@
   padding-bottom: 50px;
   background-color: #FCFFFF;
 }
+#search-logo{
+  position: absolute;
+  top: 28;
+  left: 14.8rem;
+}
 @media screen and (max-width: 935px) {
   .SearchPage{
     width: 880px;

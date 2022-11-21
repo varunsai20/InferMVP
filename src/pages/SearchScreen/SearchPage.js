@@ -4,6 +4,7 @@ import "./searchPage.css";
 import "./SearchData.css";
 import Navbar from "react-bootstrap/Navbar";
 // import Searchbar from "../../components/Searchbar"
+import * as BsIcons from "react-icons/bs";
 import "../../components/Searchbar.css";
 import SearchData from "./searchData/searchData";
 
@@ -41,6 +42,7 @@ const SearchScreen = ({ searchTerm, setSearch, googleData }) => {
             aria-label="Search"
             onChange={(event) => setTerm(event.target.value)}
           />
+           <p id="search-logo"><BsIcons.BsSearch/></p>
         </form>
       </Navbar>
       <div className="SearchPage">

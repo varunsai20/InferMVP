@@ -60,7 +60,9 @@ search {
   right: 10px;
 }
 #search-logo{
-  padding-top: 100px;
+  position: absolute;
+  top: 28;
+  left: 14.8rem;
 }
 .Search {
   position: relative;

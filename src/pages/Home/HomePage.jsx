@@ -2,6 +2,7 @@ import React from "react";
 import Search from "../../components/Searchbar";
 import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import * as BsIcons from "react-icons/bs";
 
 // import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
@@ -34,16 +35,21 @@ export default function HomePage({setSearch}) {
          <Navbar className="navbar-search" bg="light" expand="lg">
     
       <p id="Library">Library Search</p>
+     
       <form className="d-flex" id="Search" onSubmit={handleSubmit}>
+      
         <input
           placeholder="Search"
+          
           type="text"
           value={term}
           className="Search"
           aria-label="Search"
           onChange={(event)=>setTerm(event.target.value)}
-        />
+        ></input>
+        <p id="search-logo"><BsIcons.BsSearch/></p>
       </form>
+     
     </Navbar>
       <div className="home">
         {/* <img src="" alt="searchIcon" id="searchIcon"/> */}
