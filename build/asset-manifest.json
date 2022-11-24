@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.34aa298b.chunk.css",
+    "main.js": "/static/js/main.6d317bcf.chunk.js",
+    "main.js.map": "/static/js/main.6d317bcf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bcc37542.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bcc37542.js.map",
+    "static/js/2.15f1a14e.chunk.js": "/static/js/2.15f1a14e.chunk.js",
+    "static/js/2.15f1a14e.chunk.js.map": "/static/js/2.15f1a14e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.52162d9c4ac98843f92410a1207fbd75.js": "/precache-manifest.52162d9c4ac98843f92410a1207fbd75.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.34aa298b.chunk.css.map": "/static/css/main.34aa298b.chunk.css.map",
+    "static/js/2.15f1a14e.chunk.js.LICENSE.txt": "/static/js/2.15f1a14e.chunk.js.LICENSE.txt",
+    "static/js/main.6d317bcf.chunk.js.LICENSE.txt": "/static/js/main.6d317bcf.chunk.js.LICENSE.txt",
+    "static/media/Login-styles.css": "/static/media/login-background.a17b87e9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bcc37542.js",
+    "static/js/2.15f1a14e.chunk.js",
+    "static/css/main.34aa298b.chunk.css",
+    "static/js/main.6d317bcf.chunk.js"
+  ]
+}
