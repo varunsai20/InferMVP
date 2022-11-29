@@ -1,6 +1,5 @@
 import React from "react";
 import "../src/Styles.css";
-import Navbar from "./components/Navbar";
 import {Switch, Route } from "react-router-dom";
 import Login from "./pages/Login/Login"
 
@@ -10,8 +9,8 @@ import Profile from "./pages/Profile/Profile";
 import Saved from "./pages/Saved/Saved";
 import Settings from "./pages/Settings/Settings";
 import Search from "./pages/SearchScreen/search"
-import { useState, useEffect } from "react";
-import { useHistory ,Redirect} from "react-router-dom";
+import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import {searchData} from "./api/googleSearch"
 // import addNote from "./pages/Saved/addNote/addNote";
 

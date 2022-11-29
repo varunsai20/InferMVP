@@ -1,6 +1,5 @@
 import React ,{ useState,useEffect} from "react"
 import FormHeader from "./Formheader"
-import { useNavigate } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 import axios from "axios"
@@ -49,7 +48,7 @@ const Login = () => {
         <div className="Login-Page">
             <div id="loginform" className="loginform">
                 <div className="frame">
-                    <img src="https://www.infersol.com/wp-content/uploads/2020/02/logo.png"/>
+                    <img alt="Infer-logo" src="https://www.infersol.com/wp-content/uploads/2020/02/logo.png"/>
                     <p id="version"  >Version 1.0</p>
                     <FormHeader/>
                     <div className="input-fields" >
@@ -78,7 +77,7 @@ const Login = () => {
                             {/* </div> */}
                             <label className="remember-label"for="box">Remember Me</label>
                         </div>
-                        <p id="forgot"><a href="">Forgot Password</a></p>
+                        <p id="forgot"><a href="/">Forgot Password</a></p>
                         </div>
                                                
                     </div>

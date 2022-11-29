@@ -2,7 +2,7 @@ import React from "react";
 import SettingsNav from "./SettingsNav";
 import SettingsData from "./SettingsData";
 import Navbar from "../../components/Navbar";
-import { useState, useEffect } from "react";
+import {  useEffect } from "react";
 import { useHistory } from "react-router-dom";
 
 export default function Profile() {

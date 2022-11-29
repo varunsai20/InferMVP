@@ -4,7 +4,9 @@
 }
 #Library {
   position: relative;
-  padding-left: 54px;
+  right: 0;
+  left: 16rem;
+  padding-left: 57px;
   margin-top: 0px;
   margin-bottom: 0px;
   width: 157px;
@@ -19,13 +21,23 @@
   align-items: center;
   color: #222222;
 }
+.Logo-Home {
+  position: inherit;
+  width: 130.6px;
+  height: 36px;
+  left: 67px;
+  top: 32px;
+  margin-top: 0px;
+  margin-left: 0px;
+  right: 0px;
+}
 .navbar-search {
   border-right-width: 0px;
   padding-right: 0px;
   width: 1300px;
   position: fixed;
   padding-left: rem;
-  left: 16.05rem;
+  /* left: 16.05rem; */
   height: 80px;
   width: 2070px;
   background-color: #ffffff;
@@ -59,13 +71,14 @@ input {
 search {
   right: 10px;
 }
-#search-logo{
+#Search-Logo {
   position: absolute;
-  top: 28;
-  left: 14.8rem;
+  top: 45px;
+  left: 14rem;
 }
 .Search {
   position: relative;
+  left: 13rem;
   width: 978px;
   height: 70px;
   background-color: #f6f6f6;
@@ -74,7 +87,7 @@ search {
   padding-right: 0px;
   margin-right: 20px;
   border-radius: 15px;
-  margin-top: 16px;
+  margin-top: 33px;
 }
 .form {
   position: relative;
@@ -86,4 +99,60 @@ search {
   padding-left: 0px;
   padding-right: 0px;
   margin-right: 20px;
+}
+#Search {
+  height: 120px;
+  margin-left: 30px;
+  border-left: 2px solid #f7f7f7;
+  position: absolute;
+  left: 14rem;
+}
+@media screen and (max-width: 440px) {
+  .Logo-Home {
+    width: 78.075;
+    height: 17;
+    position: initial;
+    padding-left: 10px;
+    margin-top: 3px;
+  }
+  #Search {
+    border: none;
+    margin-left: 0px;
+    left: 12rem;
+  }
+  #Library {
+    position: absolute;
+    left: 6rem;
+    right: 0;
+    font-size: 13px;
+    font-weight: 600;
+    width: fit-content;
+    display: inline-flex;
+    line-height: 10px;
+    padding-left: 8px;
+  }
+  .Search {
+    position: relative;
+    left: 0;
+    width: 160px;
+    height: 50px;
+    background-color: #f6f6f6;
+    border: 0;
+    padding-left: 3rem;
+    margin-left: 5px;
+    /* padding-right: 0px; */
+    margin-right: 0px;
+    border-radius: 15px;
+    margin-top: 44px;
+  }
+  form {
+    margin-left: 0;
+  }
+  #Search-Logo {
+    left: 1.1rem;
+  }
+  .navbar-search {
+    width: 100%;
+    height: 85px;
+  }
 }

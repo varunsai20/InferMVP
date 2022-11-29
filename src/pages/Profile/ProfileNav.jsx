@@ -4,7 +4,14 @@ import "./Profile-Nav.css";
 function ProfileNav() {
   return (
     <Navbar className="navbar-profile" bg="light" expand="lg">
-      <p id="Profile">Profile</p>
+      <img
+        className="Logo"
+        src="https://www.infersol.com/wp-content/uploads/2020/02/logo.png"
+        alt="Logo"
+      />
+      <div id="Profile-Nav">
+        <p id="Profile">Profile</p>
+      </div>
     </Navbar>
   );
 }

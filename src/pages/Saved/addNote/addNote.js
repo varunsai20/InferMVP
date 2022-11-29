@@ -1,6 +1,5 @@
 import "./addNote.css";
-import React,{useState} from "react";
-import { useHistory } from "react-router-dom";
+import React from "react";
 export default function AddNote({open,onClose  }) {
   // const history=useHistory('')
   // function handleSubmit(e){

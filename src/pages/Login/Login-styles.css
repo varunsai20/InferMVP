@@ -3,17 +3,16 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js");
 
 .Login-Page {
-  font-family: 'Avenir';
+  font-family: "Avenir";
   background-image: url("./images/login-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10rem auto;
+
   padding-bottom: 3.6rem;
 }
 
 html {
   font-size: 100%;
-
 }
 
 .loginform {
@@ -42,7 +41,7 @@ img {
   width: 156px;
   height: 43px;
   /* margin: 3% auto; */
-  margin: 2% 0 0 3%;
+  margin: 1% auto 1% 2%;
   order: 0;
   float: left;
   top: 11.73%;
@@ -87,7 +86,7 @@ img {
   font-family: "Avenir";
   font-style: normal;
   font-weight: 800;
-  
+
   line-height: 55px;
 
   color: #222222;
@@ -123,7 +122,7 @@ img {
   line-height: 22px;
   /* text-align: center; */
   color: #a7a7a7;
-  margin: 2.5% auto ;
+  margin: 2.5% auto;
   /* justify-content: center; */
 }
 .row {
@@ -141,7 +140,7 @@ img {
   /* margin-left:auto;
     margin-right:auto;
     margin-top: 20%; */
-    font-family: 'Avenir';
+  font-family: "Avenir";
   width: 81%;
   box-sizing: border-box;
   /* border: 5px; */
@@ -160,7 +159,7 @@ img {
   /* margin-left:auto;
     margin-right:auto;
     margin-top: 20%; */
-    font-family: 'Avenir';
+  font-family: "Avenir";
   width: 81%;
   box-sizing: border-box;
   border: 5px;
@@ -276,7 +275,6 @@ input::placeholder {
     margin-top: 1rem; */
   position: relative;
   top: 85%;
-  
 }
 .symbol {
   position: relative;
@@ -285,29 +283,28 @@ input::placeholder {
   right: 18%;
 }
 @media screen and (max-width: 880px) {
-   .desc {
-    font-size:12px;
-    
-  } 
-  #forgot{
-    display: block; 
+  .desc {
+    font-size: 12px;
+  }
+  #forgot {
+    display: block;
     bottom: 77px;
     left: 5%;
   }
-  .remember-label{
+  .remember-label {
     display: block;
     left: 0px;
   }
-  #box{
+  #box {
     bottom: 69px;
     left: 80px;
   }
-  #version{
+  #version {
     margin-bottom: 10px;
     margin-top: 10px;
     left: 0%;
   }
-  img{
+  img {
     /* right: 9%; */
     float: none;
   }
@@ -325,3 +322,14 @@ input::placeholder {
     
  } 
 } */
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .loginform {
+    width: 50%;
+    left: 25%;
+    margin-top: 110px;
+  }
+  .Login-Page {
+    padding-bottom: 31.4%;
+  }
+}

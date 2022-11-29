@@ -14,8 +14,8 @@ export const searchData = async (term) => {
     'https://www.googleapis.com/customsearch/v1',
     {
       params: {
-        key: process.env.React_App_Google_Search_Api_Key,
-        cx: process.env.React_App_Search_Engine_Id,
+        key: "AIzaSyAIMBuNrGNeX1F1nznzo5A20PBhnG1rrFU",
+        cx: "041aa1aa643a74e35",
         q: term,
       },
     }

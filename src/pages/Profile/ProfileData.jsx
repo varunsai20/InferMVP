@@ -14,8 +14,8 @@ export default function ProfileData() {
                 alt="Avatr"
         />
         <div className="profile-pic-options">
-            <a className="edit-pic" href="">Edit profile photo</a><br/>
-            <a className="remove-pic" href="">Remove Profile photo</a><br/>   
+            <a className="edit-pic" href="/profile">Edit profile photo</a><br/>
+            <a className="remove-pic" href="/profile">Remove Profile photo</a><br/>   
         </div>    
       </div>
     <div className="profile-details">

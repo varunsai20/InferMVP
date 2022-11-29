@@ -19,20 +19,25 @@ const SearchScreen = ({ searchTerm, setSearch, googleData }) => {
     //eslint-disable-next-line
   }, [searchTerm]);
   const [term, setTerm] = useState("");
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (
-      /^[a-zA-Z0-9].*/.test(term) ||
-      /^[a-zA-Z0-9]+[" "]/.test(term) ||
-      /^[" "]+[a-zA-Z0-9]/.test(term)
-    ) {
-      setSearch(term);
-    }
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   if (
+  //     /^[a-zA-Z0-9].*/.test(term) ||
+  //     /^[a-zA-Z0-9]+[" "]/.test(term) ||
+  //     /^[" "]+[a-zA-Z0-9]/.test(term)
+  //   ) {
+  //     setSearch(term);
+  //   }
+  // };
   return (
     <>
       <Navbar className="navbar-search" bg="light" expand="lg">
-        <p id="Library">Library Search</p>
+         <img
+            className="Logo"
+            src="https://www.infersol.com/wp-content/uploads/2020/02/logo.png"
+            alt="Logo"
+          />
+        <p id="Library-Search">Library Search</p>
         <form className="d-flex" id="Search" /*onSubmit={handleSubmit}*/>
           <input
             placeholder={searchTerm}

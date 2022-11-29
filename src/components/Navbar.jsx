@@ -1,30 +1,31 @@
 import React, { useState } from "react";
-import Search from "./Searchbar";
-import ReactBootstrap from "react-bootstrap";
-
 import { IconContext } from "react-icons";
-
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 import { SidebarData } from "./SlidebarData";
-import getPosts from "../pages/Saved/axios"
 import "./Navbar.css";
 
 export default function Navbar() {
   const [sidebar, setSidebar] = useState(true);
 
-  const showSidebar = () => setSidebar(sidebar);
+  const showSidebar = () => setSidebar(!sidebar);
 
   return (
     <>
       <IconContext.Provider value={{}}>
-        
+        <div className="navbar">
+          <Link to="#" className="menu-bars">
+            <FaIcons.FaBars onClick={showSidebar} />
+          </Link>
+        </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-          <img
-            className="Logo"
-            src="https://www.infersol.com/wp-content/uploads/2020/02/logo.png"
-            alt="Logo"
-          />
+          <li className="navbar-toggle" onClick={showSidebar}>
+            <Link to="#" className="menu-close">
+              <AiIcons.AiOutlineClose />
+            </Link>
+          </li>
           <div className="Avatar-frame">
             <img
               className="Avatar"
@@ -37,7 +38,7 @@ export default function Navbar() {
             <p className="name">Varun Darwai</p>
           </div>
 
-          <ul className="nav-menu-items" onClick={showSidebar}>
+          <ul className="nav-menu-items">
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
@@ -50,7 +51,6 @@ export default function Navbar() {
             })}
           </ul>
         </nav>
-        
       </IconContext.Provider>
     </>
   );
